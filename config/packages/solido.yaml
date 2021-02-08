@@ -1,0 +1,33 @@
+solido:
+    form:
+        register_data_mapper: true
+        auto_submit: true
+
+    request:
+        versioning:
+            guesser: custom_header
+            custom_header_name: X-API-Version
+
+    cors:
+        max_age: 3600
+        allow_headers:
+            - Accept
+            - Authorization
+            - Content-Type
+            - X-Order
+            - Range
+            - sentry-trace
+
+        expose_headers:
+            - X-Total-Count
+            - X-Continuation-Token
+
+    dto:
+        namespaces:
+            - 'App\DTO'
+
+    serializer:
+        catch_exceptions: true
+
+    urn:
+        default_domain: 'solido-example'

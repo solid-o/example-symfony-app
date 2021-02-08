@@ -1,0 +1,19 @@
+name: Tests
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Tests
+        steps:
+            - uses: actions/checkout@v2
+            - name: Setup PHP with pecl extension
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.0'
+                  extensions: :opcache
+            - run: composer install
+            - run: bin/console doctrine:database:create --env=test
+            - run: bin/console doctrine:schema:create --env=test
+            - run: bin/console doctrine:fixtures:load --no-interaction --env=test
+            - run: bin/phpunit
