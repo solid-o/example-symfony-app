@@ -532,12 +532,6 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.22.0"
     },
-    "symfony/polyfill-php73": {
-        "version": "v1.22.0"
-    },
-    "symfony/polyfill-php80": {
-        "version": "v1.22.0"
-    },
     "symfony/profiler-pack": {
         "version": "v1.0.5"
     },

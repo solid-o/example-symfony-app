@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7896d34e76969719d3471321f7c4baf",
+    "content-hash": "e0af796116357a5fb8641443b967d6b5",
     "packages": [
         {
             "name": "brick/math",
@@ -1903,16 +1903,16 @@
         },
         {
             "name": "kcs/serializer",
-            "version": "dev-master",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alekitto/serializer.git",
-                "reference": "e66004c5540383b3c1fea5d0793aba80476d93b8"
+                "reference": "bf4d182aa58dc476f798df2df383d42668725840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alekitto/serializer/zipball/e66004c5540383b3c1fea5d0793aba80476d93b8",
-                "reference": "e66004c5540383b3c1fea5d0793aba80476d93b8",
+                "url": "https://api.github.com/repos/alekitto/serializer/zipball/bf4d182aa58dc476f798df2df383d42668725840",
+                "reference": "bf4d182aa58dc476f798df2df383d42668725840",
                 "shasum": ""
             },
             "require": {
@@ -1950,7 +1950,6 @@
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.4",
                 "propel/propel1": "^1.7",
-                "psr/log": "^1.1",
                 "ramsey/uuid": "^4.0|^3.6",
                 "symfony/browser-kit": "^4.4|^5.0",
                 "symfony/config": "^4.4.12|^5.1.4",
@@ -1975,7 +1974,6 @@
                 "symfony/event-dispatcher": "Dispatch pre/post serialize events",
                 "symfony/yaml": "Required if you'd like to serialize data to YAML format."
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2011,7 +2009,7 @@
             ],
             "support": {
                 "issues": "https://github.com/alekitto/serializer/issues",
-                "source": "https://github.com/alekitto/serializer/tree/master"
+                "source": "https://github.com/alekitto/serializer/tree/4.0.1"
             },
             "funding": [
                 {
@@ -2019,7 +2017,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-08T21:14:36+00:00"
+            "time": "2021-02-01T14:12:59+00:00"
         },
         {
             "name": "laminas/laminas-code",
@@ -2861,16 +2859,16 @@
         },
         {
             "name": "solido/body-converter",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/body-converter.git",
-                "reference": "82d59730190ff005f91e547dbf1bbc99809e91bf"
+                "reference": "ef56a45637ac94f100a0459a09f7e341b0e1a510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/body-converter/zipball/82d59730190ff005f91e547dbf1bbc99809e91bf",
-                "reference": "82d59730190ff005f91e547dbf1bbc99809e91bf",
+                "url": "https://api.github.com/repos/solid-o/body-converter/zipball/ef56a45637ac94f100a0459a09f7e341b0e1a510",
+                "reference": "ef56a45637ac94f100a0459a09f7e341b0e1a510",
                 "shasum": ""
             },
             "require": {
@@ -2884,7 +2882,6 @@
                 "roave/security-advisories": "dev-master",
                 "solido/php-coding-standards": "dev-master"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2908,22 +2905,22 @@
             "description": "Library to read request parameters encoded in request body and set them into correct parameter bags",
             "support": {
                 "issues": "https://github.com/solid-o/body-converter/issues",
-                "source": "https://github.com/solid-o/body-converter/tree/master"
+                "source": "https://github.com/solid-o/body-converter/tree/v0.1.0"
             },
-            "time": "2021-01-20T15:21:26+00:00"
+            "time": "2021-02-09T12:00:43+00:00"
         },
         {
             "name": "solido/common",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/common.git",
-                "reference": "4d55f1b6f831f1f5d7408af228c61ec8824eaf11"
+                "reference": "8e3e3a6e27334b64f81dd61b7b5d5173ed9bee97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/common/zipball/4d55f1b6f831f1f5d7408af228c61ec8824eaf11",
-                "reference": "4d55f1b6f831f1f5d7408af228c61ec8824eaf11",
+                "url": "https://api.github.com/repos/solid-o/common/zipball/8e3e3a6e27334b64f81dd61b7b5d5173ed9bee97",
+                "reference": "8e3e3a6e27334b64f81dd61b7b5d5173ed9bee97",
                 "shasum": ""
             },
             "require": {
@@ -2935,15 +2932,15 @@
                 "doctrine/orm": "^2.7",
                 "doctrine/persistence": "^1.0|^2.0",
                 "ocramius/proxy-manager": "^2.0|^3.0",
-                "phpunit/phpunit": "^8.1|^9.0",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.4",
                 "roave/security-advisories": "dev-master",
-                "solido/body-converter": "dev-master",
+                "solido/body-converter": "^0.1",
                 "solido/php-coding-standards": "dev-master",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/form": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2967,22 +2964,22 @@
             "description": "Common classes for solido suite",
             "support": {
                 "issues": "https://github.com/solid-o/common/issues",
-                "source": "https://github.com/solid-o/common/tree/master"
+                "source": "https://github.com/solid-o/common/tree/v0.1.0"
             },
-            "time": "2021-01-26T14:11:21+00:00"
+            "time": "2021-02-11T14:12:44+00:00"
         },
         {
             "name": "solido/cors",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/cors.git",
-                "reference": "4c20f5c4756fd8edce01e35218e651490a8ef77c"
+                "reference": "77022bc1658e3c6f023cbbfe6b9afc16e836f5b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/cors/zipball/4c20f5c4756fd8edce01e35218e651490a8ef77c",
-                "reference": "4c20f5c4756fd8edce01e35218e651490a8ef77c",
+                "url": "https://api.github.com/repos/solid-o/cors/zipball/77022bc1658e3c6f023cbbfe6b9afc16e836f5b9",
+                "reference": "77022bc1658e3c6f023cbbfe6b9afc16e836f5b9",
                 "shasum": ""
             },
             "require": {
@@ -2996,7 +2993,6 @@
                 "roave/security-advisories": "dev-master",
                 "solido/php-coding-standards": "dev-master"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3020,22 +3016,22 @@
             "description": "Cross-Origin Resource Sharing (CORS) utilities",
             "support": {
                 "issues": "https://github.com/solid-o/cors/issues",
-                "source": "https://github.com/solid-o/cors/tree/master"
+                "source": "https://github.com/solid-o/cors/tree/v0.1.0"
             },
-            "time": "2021-01-18T13:55:30+00:00"
+            "time": "2021-02-11T16:33:27+00:00"
         },
         {
             "name": "solido/data-transformers",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/data-transformers.git",
-                "reference": "1bc4719ae99fe5a7db334fe91aa073ffb163b5da"
+                "reference": "0a6a54a8283b322c8b1922ec5f342e57fa870af6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/data-transformers/zipball/1bc4719ae99fe5a7db334fe91aa073ffb163b5da",
-                "reference": "1bc4719ae99fe5a7db334fe91aa073ffb163b5da",
+                "url": "https://api.github.com/repos/solid-o/data-transformers/zipball/0a6a54a8283b322c8b1922ec5f342e57fa870af6",
+                "reference": "0a6a54a8283b322c8b1922ec5f342e57fa870af6",
                 "shasum": ""
             },
             "require": {
@@ -3048,14 +3044,13 @@
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.4",
                 "roave/security-advisories": "dev-master",
-                "solido/common": "dev-master",
-                "solido/dto-management": "dev-master",
-                "solido/pagination": "dev-master",
+                "solido/common": "*",
+                "solido/dto-management": "*",
+                "solido/pagination": "*",
                 "solido/php-coding-standards": "dev-master",
                 "symfony/http-foundation": "^4.4|^5.0",
                 "symfony/mime": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3079,13 +3074,13 @@
             "description": "Common data transformers for usage in REST APIs",
             "support": {
                 "issues": "https://github.com/solid-o/data-transformers/issues",
-                "source": "https://github.com/solid-o/data-transformers/tree/master"
+                "source": "https://github.com/solid-o/data-transformers/tree/v0.1.0"
             },
-            "time": "2021-01-16T16:20:01+00:00"
+            "time": "2021-02-11T20:20:38+00:00"
         },
         {
             "name": "solido/dto-management",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/dto-management.git",
@@ -3111,7 +3106,6 @@
                 "solido/php-coding-standards": "dev-master",
                 "symfony/http-foundation": "^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3135,22 +3129,22 @@
             "description": "Versioned DTO management library.",
             "support": {
                 "issues": "https://github.com/solid-o/dto-management/issues",
-                "source": "https://github.com/solid-o/dto-management/tree/master"
+                "source": "https://github.com/solid-o/dto-management/tree/v0.1.0"
             },
             "time": "2021-01-19T17:46:33+00:00"
         },
         {
             "name": "solido/pagination",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/pagination.git",
-                "reference": "c9253398e79aba8ff2ce9ca6fe8f6682967229b4"
+                "reference": "ba29ae1a2adebba555ba93d2e6e51c8fc47f8bcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/pagination/zipball/c9253398e79aba8ff2ce9ca6fe8f6682967229b4",
-                "reference": "c9253398e79aba8ff2ce9ca6fe8f6682967229b4",
+                "url": "https://api.github.com/repos/solid-o/pagination/zipball/ba29ae1a2adebba555ba93d2e6e51c8fc47f8bcb",
+                "reference": "ba29ae1a2adebba555ba93d2e6e51c8fc47f8bcb",
                 "shasum": ""
             },
             "require": {
@@ -3164,16 +3158,15 @@
                 "doctrine/orm": "^2.7",
                 "doctrine/phpcr-odm": "^1.5",
                 "jackalope/jackalope-doctrine-dbal": "^1.4",
-                "phpunit/phpunit": "^8.0|^9.0",
-                "refugis/doctrine-extra": "dev-master",
-                "refugis/elastica-odm": "dev-master",
+                "phpunit/phpunit": "^9.4",
+                "refugis/doctrine-extra": "^2.1.0",
+                "refugis/elastica-odm": "2.x-dev",
                 "roave/security-advisories": "dev-master",
                 "solido/php-coding-standards": "dev-master",
-                "solido/test-utils": "dev-master",
+                "solido/test-utils": "*",
                 "symfony/cache": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3197,29 +3190,29 @@
             "description": "Pagination (and endless-pagination) utilities for REST apis",
             "support": {
                 "issues": "https://github.com/solid-o/pagination/issues",
-                "source": "https://github.com/solid-o/pagination/tree/master"
+                "source": "https://github.com/solid-o/pagination/tree/v0.1.0"
             },
-            "time": "2021-01-16T13:45:20+00:00"
+            "time": "2021-02-11T17:49:10+00:00"
         },
         {
             "name": "solido/patch-manager",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/patch-manager.git",
-                "reference": "a4dd435a4eb24b2b094074b8eea81541c9b1052b"
+                "reference": "2e397e693893b1336150a583b8c89260559e86b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/patch-manager/zipball/a4dd435a4eb24b2b094074b8eea81541c9b1052b",
-                "reference": "a4dd435a4eb24b2b094074b8eea81541c9b1052b",
+                "url": "https://api.github.com/repos/solid-o/patch-manager/zipball/2e397e693893b1336150a583b8c89260559e86b4",
+                "reference": "2e397e693893b1336150a583b8c89260559e86b4",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "justinrainbow/json-schema": "^5.2",
                 "php": "^7.4|^8.0",
-                "solido/common": "dev-master",
+                "solido/common": "*",
                 "symfony/cache": "^4.4|^5.0",
                 "symfony/form": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0",
@@ -3229,15 +3222,14 @@
             },
             "require-dev": {
                 "doctrine/collections": "^1.6",
-                "doctrine/common": "^2.10",
-                "doctrine/persistence": "^1.3",
+                "doctrine/common": "^2.10|^3.0",
+                "doctrine/persistence": "^1.3|^2.0",
                 "ocramius/proxy-manager": "^2.8",
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^8.0|9.1",
+                "phpunit/phpunit": "^9.4",
                 "roave/security-advisories": "dev-master",
                 "solido/php-coding-standards": "dev-master"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3261,28 +3253,28 @@
             "description": "Patch manager designed for handling PATCH requests on REST apis",
             "support": {
                 "issues": "https://github.com/solid-o/patch-manager/issues",
-                "source": "https://github.com/solid-o/patch-manager/tree/master"
+                "source": "https://github.com/solid-o/patch-manager/tree/v0.1.0"
             },
-            "time": "2020-12-16T09:14:34+00:00"
+            "time": "2021-02-11T20:30:14+00:00"
         },
         {
             "name": "solido/query-language",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/query-language.git",
-                "reference": "6cfc621cec34b77907b2113d0bfbbb2f0fc9609b"
+                "reference": "e9f89ad626170e8a5702638d151f3310ba547902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/query-language/zipball/6cfc621cec34b77907b2113d0bfbbb2f0fc9609b",
-                "reference": "6cfc621cec34b77907b2113d0bfbbb2f0fc9609b",
+                "url": "https://api.github.com/repos/solid-o/query-language/zipball/e9f89ad626170e8a5702638d151f3310ba547902",
+                "reference": "e9f89ad626170e8a5702638d151f3310ba547902",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "solido/common": "dev-master",
-                "solido/pagination": "dev-master",
+                "solido/common": "*",
+                "solido/pagination": "*",
                 "symfony/form": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0",
                 "symfony/polyfill-php80": "^1.10",
@@ -3299,14 +3291,13 @@
                 "myclabs/php-enum": "^1.7",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.4",
-                "refugis/doctrine-extra": "dev-master",
+                "refugis/doctrine-extra": "^2.1",
                 "roave/security-advisories": "dev-master",
-                "solido/dto-management": "dev-master",
+                "solido/dto-management": "*",
                 "solido/php-coding-standards": "dev-master",
                 "symfony/cache": "^4.4|^5.0",
                 "symfony/var-dumper": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3330,22 +3321,22 @@
             "description": "Query language designed for REST apis",
             "support": {
                 "issues": "https://github.com/solid-o/query-language/issues",
-                "source": "https://github.com/solid-o/query-language/tree/master"
+                "source": "https://github.com/solid-o/query-language/tree/v0.1.0"
             },
-            "time": "2021-01-21T22:15:55+00:00"
+            "time": "2021-02-11T20:34:44+00:00"
         },
         {
             "name": "solido/security-policy-checker",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/security-policy-checker.git",
-                "reference": "f4042538ff8befe517af03e92aebc8971d8c63a7"
+                "reference": "9331dfb1dfb1892f03879b7d4cfa780b980bee21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/security-policy-checker/zipball/f4042538ff8befe517af03e92aebc8971d8c63a7",
-                "reference": "f4042538ff8befe517af03e92aebc8971d8c63a7",
+                "url": "https://api.github.com/repos/solid-o/security-policy-checker/zipball/9331dfb1dfb1892f03879b7d4cfa780b980bee21",
+                "reference": "9331dfb1dfb1892f03879b7d4cfa780b980bee21",
                 "shasum": ""
             },
             "require": {
@@ -3355,14 +3346,13 @@
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.4",
                 "roave/security-advisories": "dev-master",
-                "solido/common": "dev-master",
+                "solido/common": "*",
                 "solido/php-coding-standards": "dev-master",
                 "symfony/http-foundation": "^5.0",
                 "symfony/http-kernel": "^5.0",
                 "symfony/security-bundle": "^5.0",
                 "symfony/var-dumper": "^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3386,22 +3376,22 @@
             "description": "Utilities to build policy-based security checks for REST APIs.",
             "support": {
                 "issues": "https://github.com/solid-o/security-policy-checker/issues",
-                "source": "https://github.com/solid-o/security-policy-checker/tree/master"
+                "source": "https://github.com/solid-o/security-policy-checker/tree/v0.1.0"
             },
-            "time": "2021-01-16T13:52:00+00:00"
+            "time": "2021-02-11T20:42:53+00:00"
         },
         {
             "name": "solido/serialization",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/serialization.git",
-                "reference": "f1ceaf821dc2dbf8b9ce0b5bd6d7be6a5864dd0c"
+                "reference": "635436cdeef95c2959739973a87b3a0dbc7c2839"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/serialization/zipball/f1ceaf821dc2dbf8b9ce0b5bd6d7be6a5864dd0c",
-                "reference": "f1ceaf821dc2dbf8b9ce0b5bd6d7be6a5864dd0c",
+                "url": "https://api.github.com/repos/solid-o/serialization/zipball/635436cdeef95c2959739973a87b3a0dbc7c2839",
+                "reference": "635436cdeef95c2959739973a87b3a0dbc7c2839",
                 "shasum": ""
             },
             "require": {
@@ -3413,14 +3403,13 @@
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.4",
                 "roave/security-advisories": "dev-master",
-                "solido/dto-management": "dev-master",
+                "solido/dto-management": "*",
                 "solido/php-coding-standards": "dev-master",
                 "symfony/event-dispatcher": "^4.4|^5.0",
                 "symfony/property-access": "^5.1",
                 "symfony/serializer": "^4.4|^5.0",
                 "symfony/var-dumper": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3444,38 +3433,37 @@
             "description": "Serialization utilities for Solido suite",
             "support": {
                 "issues": "https://github.com/solid-o/serialization/issues",
-                "source": "https://github.com/solid-o/serialization/tree/master"
+                "source": "https://github.com/solid-o/serialization/tree/v0.1.0"
             },
-            "time": "2021-01-23T18:28:52+00:00"
+            "time": "2021-02-11T20:36:38+00:00"
         },
         {
             "name": "solido/solido",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/solido.git",
-                "reference": "f11f272121284dd121d48621d121b73a632f7b34"
+                "reference": "b8ca8a3fdcf812887f294104b6e3a07803e730e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/solido/zipball/f11f272121284dd121d48621d121b73a632f7b34",
-                "reference": "f11f272121284dd121d48621d121b73a632f7b34",
+                "url": "https://api.github.com/repos/solid-o/solido/zipball/b8ca8a3fdcf812887f294104b6e3a07803e730e5",
+                "reference": "b8ca8a3fdcf812887f294104b6e3a07803e730e5",
                 "shasum": ""
             },
             "require": {
-                "solido/body-converter": "dev-master",
-                "solido/common": "dev-master",
-                "solido/cors": "dev-master",
-                "solido/data-transformers": "dev-master",
-                "solido/dto-management": "dev-master",
-                "solido/pagination": "dev-master",
-                "solido/patch-manager": "dev-master",
-                "solido/query-language": "dev-master",
-                "solido/security-policy-checker": "dev-master",
-                "solido/serialization": "dev-master",
-                "solido/versioning": "dev-master"
+                "solido/body-converter": "^0.1",
+                "solido/common": "^0.1",
+                "solido/cors": "^0.1",
+                "solido/data-transformers": "^0.1",
+                "solido/dto-management": "^0.1",
+                "solido/pagination": "^0.1",
+                "solido/patch-manager": "^0.1",
+                "solido/query-language": "^0.1",
+                "solido/security-policy-checker": "^0.1",
+                "solido/serialization": "^0.1",
+                "solido/versioning": "^0.1"
             },
-            "default-branch": true,
             "type": "metapackage",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3494,22 +3482,22 @@
             "description": "Metapackage: includes all the components",
             "support": {
                 "issues": "https://github.com/solid-o/solido/issues",
-                "source": "https://github.com/solid-o/solido/tree/master"
+                "source": "https://github.com/solid-o/solido/tree/v0.1.0"
             },
-            "time": "2021-01-29T21:34:13+00:00"
+            "time": "2021-02-11T20:44:30+00:00"
         },
         {
             "name": "solido/symfony",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/symfony.git",
-                "reference": "b987703e4cd3b0f0c112c08979815748faac7c8e"
+                "reference": "302eb39424ecfbaba08fb81373260a21a4f21071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/symfony/zipball/b987703e4cd3b0f0c112c08979815748faac7c8e",
-                "reference": "b987703e4cd3b0f0c112c08979815748faac7c8e",
+                "url": "https://api.github.com/repos/solid-o/symfony/zipball/302eb39424ecfbaba08fb81373260a21a4f21071",
+                "reference": "302eb39424ecfbaba08fb81373260a21a4f21071",
                 "shasum": ""
             },
             "require": {
@@ -3521,27 +3509,27 @@
                 "doctrine/annotations": "^1.10|^2.0",
                 "giggsey/libphonenumber-for-php": "^8.10",
                 "jms/serializer": "^3.6",
-                "kcs/serializer": "^3.3",
+                "kcs/serializer": "^3.3|^4.0",
                 "moneyphp/money": "^3.2",
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.1",
-                "refugis/doctrine-extra": "dev-master",
+                "phpunit/phpunit": "^9.4",
+                "refugis/doctrine-extra": "^2.0",
                 "roave/security-advisories": "dev-master",
                 "sensio/framework-extra-bundle": "^5.0",
-                "solido/body-converter": "dev-master",
-                "solido/common": "dev-master",
-                "solido/cors": "dev-master",
-                "solido/data-transformers": "dev-master",
-                "solido/dto-management": "dev-master",
-                "solido/pagination": "dev-master",
-                "solido/patch-manager": "dev-master",
+                "solido/body-converter": "*",
+                "solido/common": "*",
+                "solido/cors": "*",
+                "solido/data-transformers": "*",
+                "solido/dto-management": "*",
+                "solido/pagination": "*",
+                "solido/patch-manager": "*",
                 "solido/php-coding-standards": "dev-master",
-                "solido/query-language": "dev-master",
-                "solido/security-policy-checker": "dev-master",
-                "solido/serialization": "dev-master",
-                "solido/versioning": "dev-master",
+                "solido/query-language": "*",
+                "solido/security-policy-checker": "*",
+                "solido/serialization": "*",
+                "solido/versioning": "*",
                 "symfony/browser-kit": "^4.4|^5.0",
-                "symfony/debug-bundle": "^5.0",
+                "symfony/debug-bundle": "^4.4|^5.0",
                 "symfony/expression-language": "^4.4|^5.0",
                 "symfony/form": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0",
@@ -3551,7 +3539,6 @@
                 "symfony/web-profiler-bundle": "^4.4|^5.0",
                 "symfony/yaml": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3575,22 +3562,22 @@
             "description": "Symfony bundle/integration for solido suite",
             "support": {
                 "issues": "https://github.com/solid-o/symfony/issues",
-                "source": "https://github.com/solid-o/symfony/tree/master"
+                "source": "https://github.com/solid-o/symfony/tree/v0.1.0"
             },
-            "time": "2021-02-08T21:43:00+00:00"
+            "time": "2021-02-11T20:46:45+00:00"
         },
         {
             "name": "solido/versioning",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/versioning.git",
-                "reference": "50a496f0a47983c08a198a1d0665276496a8bf56"
+                "reference": "fb8fb0d7f81285ce747a626bffafc7be76c5e526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/versioning/zipball/50a496f0a47983c08a198a1d0665276496a8bf56",
-                "reference": "50a496f0a47983c08a198a1d0665276496a8bf56",
+                "url": "https://api.github.com/repos/solid-o/versioning/zipball/fb8fb0d7f81285ce747a626bffafc7be76c5e526",
+                "reference": "fb8fb0d7f81285ce747a626bffafc7be76c5e526",
                 "shasum": ""
             },
             "require": {
@@ -3599,12 +3586,11 @@
             },
             "require-dev": {
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^8.0|^9.1",
+                "phpunit/phpunit": "^9.4",
                 "roave/security-advisories": "dev-master",
                 "solido/php-coding-standards": "dev-master",
                 "willdurand/negotiation": "^2.3|^3.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3628,9 +3614,9 @@
             "description": "Versioning utilities for REST apis",
             "support": {
                 "issues": "https://github.com/solid-o/versioning/issues",
-                "source": "https://github.com/solid-o/versioning/tree/master"
+                "source": "https://github.com/solid-o/versioning/tree/v0.1.0"
             },
-            "time": "2020-12-03T19:08:29+00:00"
+            "time": "2021-02-11T20:40:24+00:00"
         },
         {
             "name": "symfony/cache",
@@ -5863,168 +5849,6 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-07T16:49:33+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php73",
-            "version": "v1.22.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "a678b42e92f86eca04b7fa4c0f6f19d097fb69e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
-                "reference": "a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.22-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php73\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ],
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-07T16:49:33+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php80",
-            "version": "v1.22.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
-                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.22-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ],
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ion Bazan",
-                    "email": "ion.bazan@gmail.com"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
             },
             "funding": [
                 {
@@ -8347,16 +8171,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.74",
+            "version": "0.12.75",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "bc5f9483c8f461c86653dcbd040cf0d2778c91a2"
+                "reference": "2e4738cd67e0163861a065180eff7eb5c8417d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/bc5f9483c8f461c86653dcbd040cf0d2778c91a2",
-                "reference": "bc5f9483c8f461c86653dcbd040cf0d2778c91a2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2e4738cd67e0163861a065180eff7eb5c8417d6e",
+                "reference": "2e4738cd67e0163861a065180eff7eb5c8417d6e",
                 "shasum": ""
             },
             "require": {
@@ -8387,7 +8211,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.74"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.75"
             },
             "funding": [
                 {
@@ -8403,7 +8227,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-08T15:00:25+00:00"
+            "time": "2021-02-11T13:58:47+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -8832,12 +8656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "f7d723a10c7cb36e11430182f5813ecb1b887da0"
+                "reference": "5f40d4d577a71466f9723122251b46bdaf634709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/f7d723a10c7cb36e11430182f5813ecb1b887da0",
-                "reference": "f7d723a10c7cb36e11430182f5813ecb1b887da0",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5f40d4d577a71466f9723122251b46bdaf634709",
+                "reference": "5f40d4d577a71466f9723122251b46bdaf634709",
                 "shasum": ""
             },
             "conflict": {
@@ -8954,7 +8778,7 @@
                 "october/backend": ">=1.0.319,<1.0.470",
                 "october/cms": "= 1.0.469|>=1.0.319,<1.0.469",
                 "october/october": ">=1.0.319,<1.0.466",
-                "october/rain": ">=1.0.319,<1.0.468",
+                "october/rain": "<1.0.472|>=1.1,<1.1.2",
                 "onelogin/php-saml": "<2.10.4",
                 "oneup/uploader-bundle": "<1.9.3|>=2,<2.1.5",
                 "openid/php-openid": "<2.3",
@@ -8998,7 +8822,7 @@
                 "sensiolabs/connect": "<4.2.3",
                 "serluck/phpwhois": "<=4.2.6",
                 "shopware/core": "<=6.3.4",
-                "shopware/platform": "<=6.3.4",
+                "shopware/platform": "<=6.3.5",
                 "shopware/shopware": "<5.6.9",
                 "silverstripe/admin": ">=1.0.3,<1.0.4|>=1.1,<1.1.1",
                 "silverstripe/assets": ">=1,<1.4.7|>=1.5,<1.5.2",
@@ -9149,7 +8973,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-02T10:05:32+00:00"
+            "time": "2021-02-10T03:02:31+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -10227,16 +10051,16 @@
         },
         {
             "name": "solido/test-utils",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solid-o/test-utils.git",
-                "reference": "72f4b4851c5c86f1327893964cec51394f60f4ed"
+                "reference": "2ee179b08237a568574bf0537b294693c07e5c97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solid-o/test-utils/zipball/72f4b4851c5c86f1327893964cec51394f60f4ed",
-                "reference": "72f4b4851c5c86f1327893964cec51394f60f4ed",
+                "url": "https://api.github.com/repos/solid-o/test-utils/zipball/2ee179b08237a568574bf0537b294693c07e5c97",
+                "reference": "2ee179b08237a568574bf0537b294693c07e5c97",
                 "shasum": ""
             },
             "require": {
@@ -10249,10 +10073,10 @@
                 "doctrine/orm": "^2.7",
                 "ext-json": "*",
                 "phpunit/phpunit": "^9.4",
-                "refugis/doctrine-extra": "dev-master",
-                "refugis/elastica-odm": "dev-master",
+                "refugis/doctrine-extra": "^2.1.0",
+                "refugis/elastica-odm": "2.x-dev",
                 "roave/security-advisories": "dev-master",
-                "solido/common": "dev-master",
+                "solido/common": "*",
                 "solido/php-coding-standards": "dev-master",
                 "solido/security-policy-checker": "dev-master",
                 "symfony/browser-kit": "^4.4|^5.0",
@@ -10260,7 +10084,6 @@
                 "symfony/framework-bundle": "^4.4|^5.0",
                 "symfony/property-access": "^4.4|^5.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -10284,9 +10107,9 @@
             "description": "Test utilities for solido suite",
             "support": {
                 "issues": "https://github.com/solid-o/test-utils/issues",
-                "source": "https://github.com/solid-o/test-utils/tree/master"
+                "source": "https://github.com/solid-o/test-utils/tree/v0.1.0"
             },
-            "time": "2021-02-08T19:31:43+00:00"
+            "time": "2021-02-12T08:56:47+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -10634,16 +10457,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.29.0",
+            "version": "v1.29.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "9a9e3f4253ca0d923ad49b327db6f89a8f74fe4c"
+                "reference": "313b5669a5370bf36cd34fa8f5b5bbbfa5fb8aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/9a9e3f4253ca0d923ad49b327db6f89a8f74fe4c",
-                "reference": "9a9e3f4253ca0d923ad49b327db6f89a8f74fe4c",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/313b5669a5370bf36cd34fa8f5b5bbbfa5fb8aa8",
+                "reference": "313b5669a5370bf36cd34fa8f5b5bbbfa5fb8aa8",
                 "shasum": ""
             },
             "require": {
@@ -10702,7 +10525,7 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/maker-bundle/issues",
-                "source": "https://github.com/symfony/maker-bundle/tree/v1.29.0"
+                "source": "https://github.com/symfony/maker-bundle/tree/v1.29.1"
             },
             "funding": [
                 {
@@ -10718,7 +10541,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-07T01:02:28+00:00"
+            "time": "2021-02-10T19:21:31+00:00"
         },
         {
             "name": "symfony/monolog-bridge",
@@ -11545,12 +11368,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "kcs/serializer": 20,
-        "solido/solido": 20,
-        "solido/symfony": 20,
         "roave/security-advisories": 20,
-        "solido/php-coding-standards": 20,
-        "solido/test-utils": 20
+        "solido/php-coding-standards": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
