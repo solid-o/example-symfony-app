@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\DTO;
 
@@ -27,6 +29,8 @@ trait ResourceTrait
     }
 
     abstract public function commit(): void;
+
     abstract public function getTypeClass(): string;
+
     abstract public function create(Request $request): self | FormInterface;
 }

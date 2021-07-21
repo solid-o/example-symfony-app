@@ -12,10 +12,7 @@ use Solido\QueryLanguage\Walker\Validation\ValidationWalker;
 
 class UserValidationWalker extends ValidationWalker
 {
-    /**
-     * @inheritDoc
-     */
-    public function walkLiteral(LiteralExpression $expression)
+    public function walkLiteral(LiteralExpression $expression): void
     {
         $value = (string) $expression;
         if (! Urn::isUrn($value) || (new Urn($value))->class === User::getUrnClass()) {
@@ -25,7 +22,7 @@ class UserValidationWalker extends ValidationWalker
         $this->addViolation('"{{ value }}" is not a valid user."', ['{{ value }}' => $value]);
     }
 
-    public function walkComparison(string $operator, ValueExpression $expression)
+    public function walkComparison(string $operator, ValueExpression $expression): mixed
     {
         if ($operator !== '=' && $operator !== 'like') {
             $this->addViolation('Unsupported operator "{{ operator }}"', ['{{ operator }}' => $operator]);

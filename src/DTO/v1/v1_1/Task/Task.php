@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\DTO\v1\v1_1\Task;
 
@@ -64,7 +66,7 @@ class Task implements TaskInterface
         return $this->assignee;
     }
 
-    #[Security('is_granted(\''.Entity\User::ROLE_ADMIN.'\') or user == assignee')]
+    #[Security('is_granted(\'' . Entity\User::ROLE_ADMIN . '\') or user == assignee')]
     public function setAssignee(Entity\User $assignee): void
     {
         $this->assignee = $assignee;

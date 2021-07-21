@@ -63,9 +63,9 @@ trait AuthTrait
     }
 
     /**
-     * @see EncoderAwareInterface::getEncoderName()
+     * @see PasswordHasherAwareInterface::getPasswordHasherName()
      */
-    public function getEncoderName(): string
+    public function getPasswordHasherName(): string
     {
         return self::class;
     }

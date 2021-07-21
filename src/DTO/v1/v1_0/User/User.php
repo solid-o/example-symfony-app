@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\DTO\v1\v1_0\User;
 
@@ -52,13 +54,13 @@ class User implements UserInterface
         return $this->entity->getCreatedAt();
     }
 
-    #[Security('user == object.entity or is_granted(\''.Entity\User::ROLE_ADMIN.'\')', onInvalid: Security::RETURN_NULL)]
+    #[Security('user == object.entity or is_granted(\'' . Entity\User::ROLE_ADMIN . '\')', onInvalid: Security::RETURN_NULL)]
     public function getEmail(): ?string
     {
         return $this->email;
     }
 
-    #[Security('is_granted(\''.Entity\User::ROLE_ADMIN.'\')')]
+    #[Security('is_granted(\'' . Entity\User::ROLE_ADMIN . '\')')]
     public function setEmail(string $email): void
     {
         $this->email = $email;

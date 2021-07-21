@@ -11,9 +11,7 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @IsGranted(Entity\User::ROLE_ADMIN)
- */
+#[IsGranted(Entity\User::ROLE_ADMIN)]
 #[Route('/users', methods: [Request::METHOD_GET])]
 interface ListUsersInterface
 {

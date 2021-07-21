@@ -16,8 +16,8 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInt
 class UserValueResolver implements ArgumentValueResolverInterface
 {
     public function __construct(
-    private EntityManagerInterface $entityManager,
-    private TokenStorageInterface $tokenStorage
+        private EntityManagerInterface $entityManager,
+        private TokenStorageInterface $tokenStorage
     ) {
     }
 

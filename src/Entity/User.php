@@ -10,7 +10,8 @@ use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 use Solido\Common\Urn\UrnGeneratorInterface;
 use Solido\Common\Urn\UrnGeneratorTrait;
-use Symfony\Component\Security\Core\Encoder\EncoderAwareInterface;
+use Symfony\Component\PasswordHasher\Hasher\PasswordHasherAwareInterface;
+use Symfony\Component\Security\Core\User\LegacyPasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 use function array_search;
@@ -20,7 +21,7 @@ use function in_array;
 /**
  * @ORM\Entity()
  */
-class User implements EncoderAwareInterface, UserInterface, UrnGeneratorInterface
+class User implements UserInterface, PasswordHasherAwareInterface, LegacyPasswordAuthenticatedUserInterface, UrnGeneratorInterface
 {
     use User\AuthTrait;
     use UrnGeneratorTrait;
@@ -123,8 +124,13 @@ class User implements EncoderAwareInterface, UserInterface, UrnGeneratorInterfac
         return (string) $this->id;
     }
 
-    public function getUsername(): string
+    public function getUserIdentifier(): string
     {
         return $this->email;
+    }
+
+    public function getUsername(): string
+    {
+        return $this->getUserIdentifier();
     }
 }

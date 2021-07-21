@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\DTO\v1\v1_1\Task;
 
@@ -49,14 +51,10 @@ class ListTasks implements ListTasksInterface
             ->addField('title')
             ->addField('description')
             ->addField('assignee', [
-                'walker' => fn (QueryBuilder $queryBuilder, string $fieldName) =>
-                    new UserWalker($this->tokenStorage, $queryBuilder, $fieldName),
+                'walker' => fn (QueryBuilder $queryBuilder, string $fieldName) => new UserWalker($this->tokenStorage, $queryBuilder, $fieldName),
                 'validation_walker' => UserValidationWalker::class,
             ])
-            ->addField('due_date', [
-                'field_name' => 'dueDate',
-            ])
-        ;
+            ->addField('due_date', ['field_name' => 'dueDate']);
 
         $itr = $processor->processRequest($request);
         if ($itr instanceof FormInterface) {
@@ -64,8 +62,7 @@ class ListTasks implements ListTasksInterface
         }
 
         return $itr->apply(
-            fn (Entity\Task $task) =>
-            $this->resolver->resolve(TaskInterface::class)->get($task)
+            fn (Entity\Task $task) => $this->resolver->resolve(TaskInterface::class)->get($task)
         );
     }
 }

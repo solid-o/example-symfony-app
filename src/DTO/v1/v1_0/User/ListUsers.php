@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace App\DTO\v1\v1_0\User;
 
@@ -7,7 +9,6 @@ use App\DTO\Contracts\User\UserListEntryInterface;
 use App\Entity;
 use Doctrine\ORM\EntityManagerInterface;
 use Iterator;
-use IteratorAggregate;
 use Solido\DtoManagement\InterfaceResolver\ResolverInterface;
 use Solido\QueryLanguage\Processor\Doctrine\ORM\Processor;
 use Symfony\Component\Form\FormFactoryInterface;
@@ -44,8 +45,7 @@ class ListUsers implements ListUsersInterface
         }
 
         return $itr->apply(
-            fn (Entity\User $user) =>
-            $this->resolver->resolve(UserListEntryInterface::class)->get($user)
+            fn (Entity\User $user) => $this->resolver->resolve(UserListEntryInterface::class)->get($user)
         );
     }
 }

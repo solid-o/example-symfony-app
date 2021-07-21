@@ -18,6 +18,8 @@ use Prophecy\Argument;
 use Prophecy\PhpUnit\ProphecyTrait;
 use Prophecy\Prophecy\ObjectProphecy;
 use stdClass;
+use Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactoryInterface;
+use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
 use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
 
@@ -25,12 +27,12 @@ class PasswordUpdaterTest extends TestCase
 {
     use ProphecyTrait;
 
-    private ObjectProphecy | EncoderFactoryInterface $encoderFactory;
+    private ObjectProphecy | PasswordHasherFactoryInterface $encoderFactory;
     private PasswordUpdater $listener;
 
     protected function setUp(): void
     {
-        $this->encoderFactory = $this->prophesize(EncoderFactoryInterface::class);
+        $this->encoderFactory = $this->prophesize(PasswordHasherFactoryInterface::class);
         $this->listener = new PasswordUpdater($this->encoderFactory->reveal());
     }
 
@@ -55,7 +57,7 @@ class PasswordUpdaterTest extends TestCase
     {
         $args = $this->prophesize(LifecycleEventArgs::class);
         $args->getObject()->willReturn(new stdClass());
-        $this->encoderFactory->getEncoder(Argument::any())->shouldNotBeCalled();
+        $this->encoderFactory->getPasswordHasher(Argument::any())->shouldNotBeCalled();
 
         $this->listener->prePersist($args->reveal());
     }
@@ -85,10 +87,10 @@ class PasswordUpdaterTest extends TestCase
         $uow->recomputeSingleEntityChangeSet($metadata, $user)->shouldBeCalled();
 
         $this->encoderFactory
-            ->getEncoder($user)
-            ->willReturn($encoder = $this->prophesize(PasswordEncoderInterface::class));
+            ->getPasswordHasher($user)
+            ->willReturn($encoder = $this->prophesize(PasswordHasherInterface::class));
 
-        $encoder->encodePassword(Argument::cetera())->willReturn('encoded_password');
+        $encoder->hash(Argument::cetera())->willReturn('encoded_password');
         $this->listener->preUpdate($args->reveal());
 
         self::assertEquals('encoded_password', $user->getPassword());
@@ -103,10 +105,10 @@ class PasswordUpdaterTest extends TestCase
         $args->getObject()->willReturn($user);
 
         $this->encoderFactory
-            ->getEncoder($user)
-            ->willReturn($encoder = $this->prophesize(PasswordEncoderInterface::class));
+            ->getPasswordHasher($user)
+            ->willReturn($encoder = $this->prophesize(PasswordHasherInterface::class));
 
-        $encoder->encodePassword(Argument::cetera())->willReturn('encoded_password');
+        $encoder->hash(Argument::cetera())->willReturn('encoded_password');
         $this->listener->prePersist($args->reveal());
 
         self::assertEquals('encoded_password', $user->getPassword());

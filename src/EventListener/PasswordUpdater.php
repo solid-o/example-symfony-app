@@ -10,12 +10,12 @@ use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\PreUpdateEventArgs;
 use Doctrine\ORM\Events;
 use LogicException;
-use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
+use Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactoryInterface;
 
 class PasswordUpdater implements EventSubscriber
 {
     public function __construct(
-    private EncoderFactoryInterface $encoderFactory
+        private PasswordHasherFactoryInterface $encoderFactory
     ) {
     }
 
@@ -68,9 +68,9 @@ class PasswordUpdater implements EventSubscriber
      */
     private function encode(User $entity): void
     {
-        $encoder = $this->encoderFactory->getEncoder($entity);
+        $encoder = $this->encoderFactory->getPasswordHasher($entity);
 
-        $entity->setPassword($encoder->encodePassword($entity->getPlainPassword(), $entity->getSalt()));
+        $entity->setPassword($encoder->hash($entity->getPlainPassword(), $entity->getSalt()));
         $entity->eraseCredentials();
     }
 }

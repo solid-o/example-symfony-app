@@ -19,6 +19,7 @@ use Solido\QueryLanguage\Expression\Literal\LiteralExpression;
 use Solido\TestUtils\Doctrine\ORM\EntityManagerTrait;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Guard\Token\PostAuthenticationGuardToken;
+use Symfony\Component\Security\Http\Authenticator\Token\PostAuthenticationToken;
 
 class UserWalkerTest extends TestCase
 {
@@ -83,7 +84,7 @@ class UserWalkerTest extends TestCase
     {
         $user = new User('Current', 'current@example.org');
         $this->tokenStorage->getToken()
-            ->willReturn($token = new PostAuthenticationGuardToken($user, 'main', []));
+            ->willReturn($token = new PostAuthenticationToken($user, 'main', []));
 
         self::assertEquals(
             new Comparison('user', '=', ':user'),

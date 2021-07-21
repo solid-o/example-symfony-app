@@ -24,7 +24,7 @@ class UserWalker extends DqlWalker
     private EntityManagerInterface $entityManager;
 
     public function __construct(
-    private TokenStorageInterface $tokenStorage,
+        private TokenStorageInterface $tokenStorage,
         QueryBuilder $queryBuilder,
         string $field
     ) {
@@ -33,7 +33,7 @@ class UserWalker extends DqlWalker
         parent::__construct($queryBuilder, $field, User::class);
     }
 
-    public function walkComparison(string $operator, ValueExpression $expression)
+    public function walkComparison(string $operator, ValueExpression $expression): mixed
     {
         if ($operator === '=') {
             $value = (string) $expression;

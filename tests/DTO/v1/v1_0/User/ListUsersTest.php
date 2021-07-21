@@ -14,9 +14,13 @@ class ListUsersTest extends WebTestCase
     public function testListUsers(): void
     {
         self::get('/users');
+        self::assertResponseIsUnauthorized();
+
+        $auth = base64_encode('admin@example.org:password');
+        self::get('/users', ['Authorization' => 'Basic '.$auth]);
         self::assertResponseIsOk();
 
-        self::get('/users?email=$like(non-existent)');
+        self::get('/users?email=$like(non-existent)', ['Authorization' => 'Basic '.$auth]);
         self::assertResponseIsOk();
         self::assertResponseHasHeader('X-Total-Count');
 
@@ -25,7 +29,9 @@ class ListUsersTest extends WebTestCase
 
     public function testListUsersShouldReturnBadRequest(): void
     {
+        $auth = base64_encode('admin@example.org:password');
         self::get('/users', [
+            'Authorization' => 'Basic '.$auth,
             'X-Order' => 'not-existent, ASC'
         ]);
 
